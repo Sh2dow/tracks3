@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trackDatabase>
+	<!-- 
+	SR3 Track Database - Carbon Style
+	This file references individual track metadata files.
+	
+	Each track entry has:
+	- id: Internal track identifier
+	- file: Path to track metadata XML file (relative to this file)
+	
+	Track metadata files contain:
+	- Core identity (displayName, artName, region)
+	- Engage position (FE camera start)
+	- Minimap assets (locked/unlocked)
+	- Track stats (length, difficulty)
+	- Gameplay zones (jump_camera, canyon_drop, etc.)
+	- Barriers (enable/disable groups)
+	-->
+	
+	<!-- Test tracks -->
+	<track id="Test1-Flat" file="Test1-Flat.xml"/>
+	<track id="Jng1-Curly" file="Jng1-Curly.xml"/>
+	
+	<!-- Carbon-style tracks (examples) -->
+	<!--
+	<track id="L5RA_01" file="L5RA_01.xml"/>
+	<track id="L5RA_02" file="L5RA_02.xml"/>
+	<track id="L5RB_01" file="L5RB_01.xml"/>
+	-->
+</trackDatabase>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Track Metadata: Test1-Flat
+Carbon-style track metadata for SR3
+-->
+<track id="Test1-Flat" displayName="Test Flat Track 1" artName="test_flat_01" region="SR3_DEFAULT">
+	
+	<!-- Engage Position: FE camera start position -->
+	<engagePos pos="10, 5, -10" yaw="45"/>
+	
+	<!-- Minimap Assets -->
+	<minimap locked="data/tracks/Test1-Flat/minimap_locked.png" 
+	         unlocked="data/tracks/Test1-Flat/minimap_unlocked.png"/>
+	
+	<!-- Track Map (FE preview) -->
+	<!-- trackMap="data/tracks/Test1-Flat/TrackMaps.bin" -->
+	
+	<!-- Track Stats -->
+	<stats length="1250.5" difficulty="2" eventTypes="7"/>
+	
+	<!-- Progression -->
+	<progression isUnlocked="true" districtId="0"/>
+	
+	<!-- Gameplay Zones -->
+	<zones>
+		<!-- Jump Camera Zone -->
+		<zone type="jump_camera" pos="50, 0, 100" radius="15" group="1">
+			<param key="cameraAngle" value="45"/>
+			<param key="duration" value="3.0"/>
+		</zone>
+		
+		<!-- Canyon Drop Fail Zone -->
+		<zone type="canyon_drop" pos="120, 0, 80" radius="20" length="30" group="2">
+			<param key="failHeight" value="50"/>
+		</zone>
+		
+		<!-- Vertigo Camera Zone -->
+		<zone type="vertigo_camera" pos="200, 0, 150" radius="10" group="1">
+			<param key="cameraTilt" value="60"/>
+		</zone>
+		
+		<!-- Garage Zone -->
+		<zone type="garage" pos="0, 0, 0" radius="25" group="0"/>
+		
+		<!-- Tunnel Zone -->
+		<zone type="tunnel" pos="80, 0, 50" radius="5" length="40" group="0"/>
+	</zones>
+	
+	<!-- Barriers -->
+	<barriers>
+		<!-- Start/Finish Barrier (opens after race starts) -->
+		<barrier start="5, -10, 0" end="5, 10, 0" height="3" group="10" playerOnly="true" enabled="false"/>
+		
+		<!-- Course Barriers -->
+		<barrier start="50, 0, 100" end="55, 5, 100" height="2" group="1" handedness="1" enabled="true"/>
+		<barrier start="120, 0, 80" end="125, 10, 80" height="2.5" group="2" handedness="-1" enabled="true"/>
+	</barriers>
+</track>
