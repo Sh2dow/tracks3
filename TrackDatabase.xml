@@ -20,6 +20,7 @@
 	<!-- Test tracks -->
 	<track id="Test1-Flat" file="Test1-Flat.xml"/>
 	<track id="Jng1-Curly" file="Jng1-Curly.xml"/>
+	<track id="W2C" file="W2C.xml"/>
 	
 	<!-- Carbon-style tracks (examples) -->
 	<!--
